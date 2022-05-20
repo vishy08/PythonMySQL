@@ -10,7 +10,6 @@ import mysql.connector
 
 #myCursor.execute("CREATE TABLE users (firstName VARCHAR(255), middleInitial VARCHAR(5), lastName VARCHAR(255), user_id INTEGER AUTO_INCREMENT PRIMARY KEY)")
 
-
 def add():
     mydb = mysql.connector.connect(
     host="localhost",
@@ -58,6 +57,5 @@ textBox3.place(x=140, y=70)
 
 addButton = Button(root, text="Add", command = add, height=3, width=13)
 addButton.place(x=140, y=130)
-
 
 root.mainloop()
